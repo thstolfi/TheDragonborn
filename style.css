@@ -1,61 +1,75 @@
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Tangerine:wght@700&family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Courgette&family=Kanit:ital,wght@0,100;0,300;0,700;0,800;1,100;1,200&family=Libre+Baskerville:wght@400;700&display=swap');
 
-*::-webkit-scrollbar {
-  width: 5px;
-}
+  *::-webkit-scrollbar {
+    width: 5px;
+  }
 
-*::-webkit-scrollbar-thumb {
-  background-color: #e2e2e2;
-  border-radius: 3px;
-  border: 0px solid #e0e0e0;
-}
+  *::-webkit-scrollbar-thumb {
+    background-color: #e2e2e2;
+    border-radius: 3px;
+    border: 0px solid #e0e0e0;
+  }
 
 *{
-  margin: 0px auto;
-  box-sizing: border-box;
-  outline: red 1px dashed;
+    margin: 0px auto;
+    box-sizing: border-box;
+    border: red 1px dashed;
 }
 body{
-  background-color: #161616;
-  height: 1000px;
+    background-color: #0b0b0b;
+    height: 2000px;
 }
 .background{
-  background-image: url('assets/background.jpg');
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    background-image: url('assets/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .bg-title{
-  color: #fcfcfc;
-  font-family: 'Anton', sans-serif;
-  font-size: 7rem;
-  mix-blend-mode: soft-light;
-  text-shadow: rgb(21, 21, 21, 0.7) 0px 0px 20px;
+    color: #fcfcfc;
+    font-family: 'Anton', sans-serif;
+    font-size: 7rem;
+    mix-blend-mode: soft-light;
+    text-shadow: rgb(21, 21, 21, 0.7) 0px 0px 20px;
 }
-#first-section{
+#weapons{
   width: 100%;
 }
-#first-section p{
+.weapon-box{
   width: 100%;
-  padding: 50px;
-  text-align: center;
-  color: #fcfcfc;
-  font-family: "Young Serif";
-  font-size: 5rem;
-  text-shadow: rgb(252, 252, 252, 0.3) 0px 0px 15px;
-}
-.weapons-holder{
-  width: 90%;
   display: flex;
   justify-content: center;
-  padding-top: 50px;
+  padding: 20px;
 }
-.weapon-card{
+.weapon{
   width: 200px;
-  height: 500px;
+  display: flex;
+  align-items: center;
+}
+.weapon-desc{
+  width: 100%;
+  display: flex;
+}
+.weapon-box img:hover{
+  cursor: pointer;
+}
+.desc{
+  width: 350px;
+  text-align: center;
+  color: #fcfcfc;
+  font-family: Libre Baskerville;
+  font-weight: 700;
+}
+.desc h1{
+  font-size: 3.5rem;
+  padding: 10px;
+}
+.desc p{
+  font-family: Kanit;
+  font-weight: 300;
 }
