@@ -27,12 +27,11 @@ body{
     height: 100vh;
     display: flex;
     align-items: center;
-    justify-content: center;
 }
 .bg-title{
     color: #fcfcfc;
     font-family: 'Anton', sans-serif;
-    font-size: 7rem;
+    font-size: 8vw;
     mix-blend-mode: soft-light;
     text-shadow: rgb(21, 21, 21, 0.7) 0px 0px 20px;
 }
@@ -84,7 +83,6 @@ body{
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 1000px;
   width: 100%;
   padding-top: 5rem;
 }
@@ -176,4 +174,18 @@ footer{
 }
 footer a{
   color: #fcfcfc;
+}
+
+@media screen and (max-width: 769px) {
+  .bg-title{
+    font-size: 70px;
+    text-align: center;
+  }
+  .desc p{
+    padding: 10px;
+  }
+  .card-text{
+    width: 340px;
+    padding-right: 20px;
+  }
 }
