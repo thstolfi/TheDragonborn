@@ -7,3 +7,11 @@ function removeOverlay(){
         element.remove();
     }, 1000);
 }
+
+function changeColor(imgId, txtId){
+    var imagem = document.getElementById(imgId)
+    var txt = document.getElementById(txtId)
+
+    txt.style.color = '#fcfcfc'
+    imagem.src = `assets/${imgId}active.png`
+}

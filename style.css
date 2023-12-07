@@ -66,9 +66,10 @@ body{
 .desc{
   width: 350px;
   text-align: center;
-  color: #fcfcfc;
+  color: #252525;
   font-family: Libre Baskerville;
   font-weight: 700;
+  transition: ease-in-out 300ms;
 }
 .desc h1{
   font-size: 3.5rem;
